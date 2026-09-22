@@ -4,44 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RH Digital Gyan - सरकारी नौकरी, फॉर्म, रिजल्ट</title>
+<title>RH Digital Gyan - सरकारी नौकरी और शिक्षा</title>
 
 <style>
-
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f3f6fa;
+    background:#f3f7fb;
     color:#222;
 }
 
 /* HEADER */
-
 header{
-    background:linear-gradient(135deg,#0759a8,#087bdc);
+    background:linear-gradient(135deg,#0757a5,#0878d1);
     color:white;
     padding:22px 15px;
     text-align:center;
 }
 
 header h1{
-    margin:0;
     font-size:32px;
 }
 
 header p{
-    margin:7px 0 0;
+    margin-top:7px;
     font-size:15px;
 }
 
 /* NAVIGATION */
-
 nav{
-    background:#063f78;
+    background:#043d78;
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
@@ -50,170 +47,211 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-    padding:14px 16px;
+    padding:13px 15px;
     font-size:15px;
 }
 
 nav a:hover{
-    background:#0759a8;
+    background:#0878d1;
 }
 
 /* NOTICE */
-
 .notice{
     background:#fff3cd;
     color:#664d03;
-    padding:11px;
+    padding:12px;
     text-align:center;
     font-weight:bold;
 }
 
+/* CONTAINER */
+.container{
+    width:94%;
+    max-width:1200px;
+    margin:25px auto;
+}
+
 /* SEARCH */
+.search-box{
+    background:white;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.10);
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.search-box h2{
+    color:#0757a5;
+    margin-bottom:15px;
+}
 
 .search-area{
-    max-width:900px;
-    margin:25px auto;
-    padding:0 15px;
     display:flex;
+    max-width:700px;
+    margin:auto;
 }
 
 .search-area input{
     flex:1;
     padding:13px;
-    border:1px solid #ccc;
+    border:2px solid #ddd;
     border-radius:7px 0 0 7px;
     font-size:16px;
     outline:none;
 }
 
+.search-area input:focus{
+    border-color:#0757a5;
+}
+
 .search-area button{
-    background:#0759a8;
-    color:white;
+    padding:13px 20px;
     border:none;
-    padding:0 20px;
+    background:#0757a5;
+    color:white;
+    font-weight:bold;
     border-radius:0 7px 7px 0;
     cursor:pointer;
 }
 
-/* MAIN */
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:0 20px;
+.search-area button:hover{
+    background:#043d78;
 }
 
+#searchResult{
+    margin-top:15px;
+}
+
+/* CATEGORIES */
 .section-title{
     text-align:center;
-    margin:30px 0 20px;
+    color:#0757a5;
+    margin-bottom:18px;
+    font-size:27px;
 }
-
-.section-title h2{
-    color:#0759a8;
-    margin-bottom:5px;
-}
-
-.section-title p{
-    color:#666;
-}
-
-/* CATEGORY GRID */
 
 .category-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:18px;
+    margin-bottom:35px;
 }
 
 .category{
     background:white;
-    padding:22px;
-    border-radius:12px;
+    padding:25px 15px;
     text-align:center;
-    box-shadow:0 3px 12px rgba(0,0,0,0.10);
-    border-top:4px solid #0759a8;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.09);
+    text-decoration:none;
+    color:#222;
+    border-top:5px solid #0757a5;
+    transition:.2s;
+}
+
+.category:hover{
+    transform:translateY(-5px);
+    box-shadow:0 7px 18px rgba(0,0,0,.15);
+}
+
+.category .icon{
+    font-size:38px;
+    margin-bottom:10px;
 }
 
 .category h3{
-    color:#0759a8;
-    margin-top:5px;
+    color:#0757a5;
+    margin-bottom:6px;
 }
 
-.category p{
-    color:#666;
-}
-
-.btn{
-    display:inline-block;
-    background:#0759a8;
-    color:white;
-    text-decoration:none;
-    padding:10px 16px;
-    border-radius:6px;
-    margin-top:5px;
-}
-
-.btn:hover{
-    background:#003f7d;
-}
-
-/* LATEST FORMS */
-
-.latest-grid{
+/* LATEST UPDATES */
+.update-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:18px;
 }
 
 .update{
     background:white;
     padding:20px;
     border-radius:12px;
-    box-shadow:0 3px 12px rgba(0,0,0,0.10);
+    box-shadow:0 3px 12px rgba(0,0,0,.09);
+    border-left:5px solid #198754;
 }
 
 .update h3{
-    color:#0759a8;
-    margin-top:0;
+    color:#0757a5;
+    margin-bottom:10px;
+    line-height:1.4;
 }
 
-.badge{
+.update p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.update a{
     display:inline-block;
-    background:#e7f3ff;
-    color:#0759a8;
-    padding:5px 8px;
-    border-radius:5px;
+    margin-top:12px;
+    color:white;
+    background:#0757a5;
+    text-decoration:none;
+    padding:9px 13px;
+    border-radius:6px;
     font-size:13px;
-    margin-bottom:8px;
 }
 
-/* VIEW ALL */
+/* INFO */
+.info-box{
+    background:white;
+    margin-top:30px;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    line-height:1.8;
+}
 
-.view-all{
-    text-align:center;
-    margin:25px 0 40px;
+.info-box h2{
+    color:#0757a5;
+    margin-bottom:10px;
 }
 
 /* FOOTER */
-
 footer{
-    background:#063f78;
+    background:#043d78;
     color:white;
     text-align:center;
     padding:25px 15px;
-    margin-top:40px;
+    margin-top:35px;
 }
 
 footer p{
-    margin:7px;
+    margin:5px;
+    font-size:14px;
+}
+
+/* SEARCH RESULT */
+.search-item{
+    display:block;
+    background:#f1f7ff;
+    padding:12px;
+    margin:7px 0;
+    border-radius:7px;
+    text-decoration:none;
+    color:#0757a5;
+    font-weight:bold;
+}
+
+.search-item:hover{
+    background:#dcecff;
 }
 
 /* MOBILE */
-
 @media(max-width:900px){
 
     .category-grid,
-    .latest-grid{
+    .update-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
@@ -226,282 +264,417 @@ footer p{
     }
 
     nav a{
-        padding:11px 9px;
+        padding:10px;
         font-size:13px;
     }
 
     .category-grid,
-    .latest-grid{
+    .update-grid{
         grid-template-columns:1fr;
     }
 
-    .container{
-        padding:0 12px;
+    .search-area{
+        flex-direction:column;
     }
 
-}
+    .search-area input{
+        border-radius:7px;
+        margin-bottom:8px;
+    }
 
+    .search-area button{
+        border-radius:7px;
+    }
+}
 </style>
 </head>
 
-
 <body>
 
-
 <!-- HEADER -->
-
 <header>
-
-<h1>🌐 RH Digital Gyan</h1>
-
-<p>सरकारी नौकरी • फॉर्म • Admit Card • Result • Answer Key • Scholarship</p>
-
+    <h1>🌐 RH Digital Gyan</h1>
+    <p>सरकारी नौकरी • सरकारी फॉर्म • Admit Card • Result • Scholarship</p>
 </header>
 
 
 <!-- NAVIGATION -->
-
 <nav>
 
-<a href="index.html">🏠 Home</a>
+    <a href="index.html">🏠 Home</a>
 
-<a href="form.html">📝 Latest Form</a>
+    <a href="form.html">📋 Latest Form</a>
 
-<a href="jobs.html">💼 Jobs</a>
+    <a href="jobs.html">💼 Jobs</a>
 
-<a href="admit-card.html">🎫 Admit Card</a>
+    <a href="admit-card.html">🎫 Admit Card</a>
 
-<a href="result.html">📊 Result</a>
+    <a href="result.html">📊 Result</a>
 
-<a href="answer-key.html">🔑 Answer Key</a>
+    <a href="answer-key.html">📝 Answer Key</a>
 
-<a href="scholarship.html">🎓 Scholarship</a>
+    <a href="scholarship.html">🎓 Scholarship</a>
 
 </nav>
 
 
 <!-- NOTICE -->
-
 <div class="notice">
-
-🔔 RH Digital Gyan पर सरकारी फॉर्म और नौकरी की नई जानकारी देखें
-
-</div>
-
-
-<!-- SEARCH -->
-
-<div class="search-area">
-
-<input
-type="text"
-id="searchBox"
-placeholder="यहाँ Form, Job, Result आदि खोजें..."
-onkeyup="searchContent()">
-
-<button onclick="searchContent()">🔍 Search</button>
-
+    📢 RH Digital Gyan पर Latest Government Updates देखें
 </div>
 
 
 <div class="container">
 
 
-<!-- CATEGORIES -->
+<!-- SEARCH -->
+<div class="search-box">
 
-<div class="section-title">
+    <h2>🔍 जानकारी खोजें</h2>
 
-<h2>📚 सभी सेवाएँ</h2>
+    <div class="search-area">
 
-<p>जरूरी जानकारी एक ही जगह</p>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="जैसे: Police, UPSC, Result, Scholarship..."
+            onkeyup="searchWebsite()"
+        >
+
+        <button onclick="searchWebsite()">
+            Search
+        </button>
+
+    </div>
+
+    <div id="searchResult"></div>
 
 </div>
+
+
+
+<!-- CATEGORIES -->
+<h2 class="section-title">
+    📚 मुख्य सेवाएँ
+</h2>
 
 
 <div class="category-grid">
 
+    <a class="category" href="form.html">
 
-<div class="category">
+        <div class="icon">📋</div>
 
-<h3>📝 Latest Form</h3>
+        <h3>Latest Form</h3>
 
-<p>नए सरकारी ऑनलाइन फॉर्म</p>
+        <p>नए सरकारी ऑनलाइन फॉर्म</p>
 
-<a class="btn" href="form.html">View Forms</a>
-
-</div>
-
-
-<div class="category">
-
-<h3>💼 Latest Jobs</h3>
-
-<p>नई सरकारी नौकरी की जानकारी</p>
-
-<a class="btn" href="jobs.html">View Jobs</a>
-
-</div>
+    </a>
 
 
-<div class="category">
+    <a class="category" href="jobs.html">
 
-<h3>🎫 Admit Card</h3>
+        <div class="icon">💼</div>
 
-<p>नए Admit Card और परीक्षा प्रवेश पत्र</p>
+        <h3>Government Jobs</h3>
 
-<a class="btn" href="admit-card.html">View Admit Card</a>
+        <p>सरकारी नौकरी की जानकारी</p>
 
-</div>
-
-
-<div class="category">
-
-<h3>📊 Result</h3>
-
-<p>परीक्षा के नए Result</p>
-
-<a class="btn" href="result.html">View Result</a>
-
-</div>
+    </a>
 
 
-<div class="category">
+    <a class="category" href="admit-card.html">
 
-<h3>🔑 Answer Key</h3>
+        <div class="icon">🎫</div>
 
-<p>नई परीक्षा की Answer Key</p>
+        <h3>Admit Card</h3>
 
-<a class="btn" href="answer-key.html">View Answer Key</a>
+        <p>नए Admit Card डाउनलोड करें</p>
 
-</div>
+    </a>
 
 
-<div class="category">
+    <a class="category" href="result.html">
 
-<h3>🎓 Scholarship</h3>
+        <div class="icon">📊</div>
 
-<p>Scholarship की नई जानकारी</p>
+        <h3>Results</h3>
 
-<a class="btn" href="scholarship.html">View Scholarship</a>
+        <p>सरकारी परीक्षा के Result</p>
 
-</div>
+    </a>
 
+
+    <a class="category" href="answer-key.html">
+
+        <div class="icon">📝</div>
+
+        <h3>Answer Key</h3>
+
+        <p>परीक्षा की Answer Key</p>
+
+    </a>
+
+
+    <a class="category" href="scholarship.html">
+
+        <div class="icon">🎓</div>
+
+        <h3>Scholarship</h3>
+
+        <p>छात्रवृत्ति की जानकारी</p>
+
+    </a>
 
 </div>
+
 
 
 <!-- LATEST UPDATES -->
+<h2 class="section-title">
+    🔥 Latest Updates
+</h2>
 
-<div class="section-title">
 
-<h2>🔥 Latest Updates</h2>
+<div class="update-grid">
 
-<p>हाल की महत्वपूर्ण जानकारी</p>
+
+    <div class="update">
+
+        <h3>👮 MP Police Constable Recruitment 2026</h3>
+
+        <p>
+            MP Police Constable भर्ती की जानकारी और आवेदन से संबंधित
+            official updates देखें।
+        </p>
+
+        <a href="jobs.html">
+            View Details →
+        </a>
+
+    </div>
+
+
+    <div class="update">
+
+        <h3>🏦 IBPS RRB XV Recruitment 2026</h3>
+
+        <p>
+            IBPS RRB की नई भर्ती और application से संबंधित जानकारी देखें।
+        </p>
+
+        <a href="jobs.html">
+            View Details →
+        </a>
+
+    </div>
+
+
+    <div class="update">
+
+        <h3>📮 India Post GDS 2026</h3>
+
+        <p>
+            India Post GDS recruitment की जानकारी और official portal देखें।
+        </p>
+
+        <a href="form.html">
+            View Details →
+        </a>
+
+    </div>
+
+
+    <div class="update">
+
+        <h3>🏛️ UPSC Recruitment 2026</h3>
+
+        <p>
+            UPSC के latest forms और recruitment information देखें।
+        </p>
+
+        <a href="form.html">
+            View Details →
+        </a>
+
+    </div>
+
+
+    <div class="update">
+
+        <h3>🎫 Latest Admit Cards</h3>
+
+        <p>
+            विभिन्न परीक्षाओं के Admit Card और official links यहाँ देखें।
+        </p>
+
+        <a href="admit-card.html">
+            View Details →
+        </a>
+
+    </div>
+
+
+    <div class="update">
+
+        <h3>📊 Latest Results</h3>
+
+        <p>
+            विभिन्न सरकारी परीक्षाओं के Result और official links देखें।
+        </p>
+
+        <a href="result.html">
+            View Results →
+        </a>
+
+    </div>
 
 </div>
 
 
-<div class="latest-grid">
 
+<!-- ABOUT -->
+<div class="info-box">
 
-<div class="update">
+    <h2>ℹ️ RH Digital Gyan के बारे में</h2>
 
-<span class="badge">Latest Form</span>
+    <p>
+        RH Digital Gyan एक जानकारी आधारित वेबसाइट है जहाँ
+        सरकारी नौकरी, ऑनलाइन फॉर्म, Admit Card, Result,
+        Answer Key और Scholarship से संबंधित जानकारी एक जगह
+        उपलब्ध कराने का प्रयास किया जाता है।
+    </p>
 
-<h3>📝 UPSC Direct Recruitment 2026</h3>
-
-<p>UPSC Direct Recruitment की जानकारी और official notification देखें।</p>
-
-<a class="btn" href="form.html">View Details</a>
-
-</div>
-
-
-<div class="update">
-
-<span class="badge">India Post</span>
-
-<h3>📮 India Post GDS 2026</h3>
-
-<p>India Post GDS की भर्ती से संबंधित जानकारी देखें।</p>
-
-<a class="btn" href="form.html">View Details</a>
+    <p>
+        किसी भी आवेदन या परीक्षा से पहले संबंधित विभाग की
+        Official Website और Official Notification अवश्य देखें।
+    </p>
 
 </div>
 
-
-<div class="update">
-
-<span class="badge">Coming Soon</span>
-
-<h3>🔔 नई सरकारी भर्ती</h3>
-
-<p>नई भर्ती की जानकारी जल्द ही RH Digital Gyan पर जोड़ी जाएगी।</p>
-
-<a class="btn" href="jobs.html">View Jobs</a>
-
 </div>
 
-
-</div>
-
-
-<div class="view-all">
-
-<a class="btn" href="form.html">📋 सभी Forms देखें →</a>
-
-</div>
-
-
-</div>
 
 
 <!-- FOOTER -->
-
 <footer>
 
-<p><b>🌐 RH Digital Gyan</b></p>
+    <p>
+        © 2026 RH Digital Gyan | All Rights Reserved
+    </p>
 
-<p>सरकारी नौकरी, फॉर्म, Result, Admit Card और Scholarship की जानकारी</p>
-
-<p>© 2026 RH Digital Gyan</p>
+    <p>
+        सरकारी जानकारी के लिए संबंधित Official Website को प्राथमिकता दें।
+    </p>
 
 </footer>
 
 
+
+<!-- SEARCH JAVASCRIPT -->
 <script>
 
-function searchContent(){
+function searchWebsite(){
 
     let input =
-    document.getElementById("searchBox")
-    .value
-    .toLowerCase();
+        document.getElementById("searchInput").value
+        .toLowerCase()
+        .trim();
 
-    let items =
-    document.querySelectorAll(".category, .update");
+    let result =
+        document.getElementById("searchResult");
 
-    items.forEach(function(item){
+    if(input === ""){
 
-        let text =
-        item.innerText.toLowerCase();
+        result.innerHTML = "";
 
-        if(text.includes(input)){
+        return;
+    }
 
-            item.style.display="";
 
-        }else{
+    let pages = [
 
-            item.style.display="none";
+        {
+            name:"📋 Latest Forms",
+            keywords:"form forms online apply registration upsc gds ibps",
+            link:"form.html"
+        },
 
+        {
+            name:"💼 Government Jobs",
+            keywords:"job jobs police constable ibps rrb teacher pgt prt",
+            link:"jobs.html"
+        },
+
+        {
+            name:"🎫 Admit Card",
+            keywords:"admit card hall ticket exam upsc ssc",
+            link:"admit-card.html"
+        },
+
+        {
+            name:"📊 Results",
+            keywords:"result results upsc nta railway rrb",
+            link:"result.html"
+        },
+
+        {
+            name:"📝 Answer Key",
+            keywords:"answer key answerkey exam question paper",
+            link:"answer-key.html"
+        },
+
+        {
+            name:"🎓 Scholarship",
+            keywords:"scholarship student छात्रवृत्ति education",
+            link:"scholarship.html"
         }
 
+    ];
+
+
+    let matches = pages.filter(function(page){
+
+        return page.name.toLowerCase().includes(input)
+        ||
+        page.keywords.includes(input);
+
     });
+
+
+    if(matches.length > 0){
+
+        result.innerHTML =
+            "<h3 style='color:#0757a5;margin-bottom:8px;'>🔎 Search Result</h3>";
+
+
+        matches.forEach(function(page){
+
+            result.innerHTML +=
+
+                '<a class="search-item" href="' +
+                page.link +
+                '">' +
+                page.name +
+                ' →' +
+                '</a>';
+
+        });
+
+    }
+
+    else{
+
+        result.innerHTML =
+            "<p style='color:#b02a37;font-weight:bold;margin-top:12px;'>" +
+            "❌ जानकारी नहीं मिली। कृपया दूसरा शब्द खोजें।" +
+            "</p>";
+
+    }
 
 }
 
 </script>
-
 
 </body>
 </html>
