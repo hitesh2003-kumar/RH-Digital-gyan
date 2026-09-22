@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hitesh2003-kumar.github.io/RH-Digital-gyan/sitemap.xml
