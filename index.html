@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RH Digital Gyan - सरकारी नौकरी, फॉर्म, रिजल्ट</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f3f6fa;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0759a8,#087bdc);
+    color:white;
+    padding:22px 15px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    margin:7px 0 0;
+    font-size:15px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#063f78;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 16px;
+    font-size:15px;
+}
+
+nav a:hover{
+    background:#0759a8;
+}
+
+/* NOTICE */
+
+.notice{
+    background:#fff3cd;
+    color:#664d03;
+    padding:11px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* SEARCH */
+
+.search-area{
+    max-width:900px;
+    margin:25px auto;
+    padding:0 15px;
+    display:flex;
+}
+
+.search-area input{
+    flex:1;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:7px 0 0 7px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-area button{
+    background:#0759a8;
+    color:white;
+    border:none;
+    padding:0 20px;
+    border-radius:0 7px 7px 0;
+    cursor:pointer;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin:30px 0 20px;
+}
+
+.section-title h2{
+    color:#0759a8;
+    margin-bottom:5px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* CATEGORY GRID */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.category{
+    background:white;
+    padding:22px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,0.10);
+    border-top:4px solid #0759a8;
+}
+
+.category h3{
+    color:#0759a8;
+    margin-top:5px;
+}
+
+.category p{
+    color:#666;
+}
+
+.btn{
+    display:inline-block;
+    background:#0759a8;
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:6px;
+    margin-top:5px;
+}
+
+.btn:hover{
+    background:#003f7d;
+}
+
+/* LATEST FORMS */
+
+.latest-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.update{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.10);
+}
+
+.update h3{
+    color:#0759a8;
+    margin-top:0;
+}
+
+.badge{
+    display:inline-block;
+    background:#e7f3ff;
+    color:#0759a8;
+    padding:5px 8px;
+    border-radius:5px;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+/* VIEW ALL */
+
+.view-all{
+    text-align:center;
+    margin:25px 0 40px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#063f78;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:7px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .category-grid,
+    .latest-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:25px;
+    }
+
+    nav a{
+        padding:11px 9px;
+        font-size:13px;
+    }
+
+    .category-grid,
+    .latest-grid{
+        grid-template-columns:1fr;
+    }
+
+    .container{
+        padding:0 12px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<h1>🌐 RH Digital Gyan</h1>
+
+<p>सरकारी नौकरी • फॉर्म • Admit Card • Result • Answer Key • Scholarship</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="form.html">📝 Latest Form</a>
+
+<a href="jobs.html">💼 Jobs</a>
+
+<a href="admit-card.html">🎫 Admit Card</a>
+
+<a href="result.html">📊 Result</a>
+
+<a href="answer-key.html">🔑 Answer Key</a>
+
+<a href="scholarship.html">🎓 Scholarship</a>
+
+</nav>
+
+
+<!-- NOTICE -->
+
+<div class="notice">
+
+🔔 RH Digital Gyan पर सरकारी फॉर्म और नौकरी की नई जानकारी देखें
+
+</div>
+
+
+<!-- SEARCH -->
+
+<div class="search-area">
+
+<input
+type="text"
+id="searchBox"
+placeholder="यहाँ Form, Job, Result आदि खोजें..."
+onkeyup="searchContent()">
+
+<button onclick="searchContent()">🔍 Search</button>
+
+</div>
+
+
+<div class="container">
+
+
+<!-- CATEGORIES -->
+
+<div class="section-title">
+
+<h2>📚 सभी सेवाएँ</h2>
+
+<p>जरूरी जानकारी एक ही जगह</p>
+
+</div>
+
+
+<div class="category-grid">
+
+
+<div class="category">
+
+<h3>📝 Latest Form</h3>
+
+<p>नए सरकारी ऑनलाइन फॉर्म</p>
+
+<a class="btn" href="form.html">View Forms</a>
+
+</div>
+
+
+<div class="category">
+
+<h3>💼 Latest Jobs</h3>
+
+<p>नई सरकारी नौकरी की जानकारी</p>
+
+<a class="btn" href="jobs.html">View Jobs</a>
+
+</div>
+
+
+<div class="category">
+
+<h3>🎫 Admit Card</h3>
+
+<p>नए Admit Card और परीक्षा प्रवेश पत्र</p>
+
+<a class="btn" href="admit-card.html">View Admit Card</a>
+
+</div>
+
+
+<div class="category">
+
+<h3>📊 Result</h3>
+
+<p>परीक्षा के नए Result</p>
+
+<a class="btn" href="result.html">View Result</a>
+
+</div>
+
+
+<div class="category">
+
+<h3>🔑 Answer Key</h3>
+
+<p>नई परीक्षा की Answer Key</p>
+
+<a class="btn" href="answer-key.html">View Answer Key</a>
+
+</div>
+
+
+<div class="category">
+
+<h3>🎓 Scholarship</h3>
+
+<p>Scholarship की नई जानकारी</p>
+
+<a class="btn" href="scholarship.html">View Scholarship</a>
+
+</div>
+
+
+</div>
+
+
+<!-- LATEST UPDATES -->
+
+<div class="section-title">
+
+<h2>🔥 Latest Updates</h2>
+
+<p>हाल की महत्वपूर्ण जानकारी</p>
+
+</div>
+
+
+<div class="latest-grid">
+
+
+<div class="update">
+
+<span class="badge">Latest Form</span>
+
+<h3>📝 UPSC Direct Recruitment 2026</h3>
+
+<p>UPSC Direct Recruitment की जानकारी और official notification देखें।</p>
+
+<a class="btn" href="form.html">View Details</a>
+
+</div>
+
+
+<div class="update">
+
+<span class="badge">India Post</span>
+
+<h3>📮 India Post GDS 2026</h3>
+
+<p>India Post GDS की भर्ती से संबंधित जानकारी देखें।</p>
+
+<a class="btn" href="form.html">View Details</a>
+
+</div>
+
+
+<div class="update">
+
+<span class="badge">Coming Soon</span>
+
+<h3>🔔 नई सरकारी भर्ती</h3>
+
+<p>नई भर्ती की जानकारी जल्द ही RH Digital Gyan पर जोड़ी जाएगी।</p>
+
+<a class="btn" href="jobs.html">View Jobs</a>
+
+</div>
+
+
+</div>
+
+
+<div class="view-all">
+
+<a class="btn" href="form.html">📋 सभी Forms देखें →</a>
+
+</div>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p><b>🌐 RH Digital Gyan</b></p>
+
+<p>सरकारी नौकरी, फॉर्म, Result, Admit Card और Scholarship की जानकारी</p>
+
+<p>© 2026 RH Digital Gyan</p>
+
+</footer>
+
+
+<script>
+
+function searchContent(){
+
+    let input =
+    document.getElementById("searchBox")
+    .value
+    .toLowerCase();
+
+    let items =
+    document.querySelectorAll(".category, .update");
+
+    items.forEach(function(item){
+
+        let text =
+        item.innerText.toLowerCase();
+
+        if(text.includes(input)){
+
+            item.style.display="";
+
+        }else{
+
+            item.style.display="none";
+
+        }
+
+    });
+
+}
+
+</script>
+
+
+</body>
+</html>
